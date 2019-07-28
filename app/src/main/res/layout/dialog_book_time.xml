@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/dialog_title_book_time_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:text="@string/title_dialog_book"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp">
+
+        <TextView
+                android:id="@+id/dialog_book_time_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:text="@string/chronometer_initial_state"
+                android:visibility="gone"/>
+
+        <LinearLayout
+                android:id="@+id/dialog_add_new_time_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:visibility="gone">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                <ImageButton
+                        android:id="@+id/add_hour_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:contentDescription="@string/image_button_add"
+                        android:src="@drawable/ic_baseline_add_24px"/>
+
+                <TextView
+                        android:id="@+id/hours_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="32sp"
+                        android:text="@string/initial_state"/>
+
+                <ImageButton
+                        android:id="@+id/remove_hour_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:contentDescription="@string/image_button_subtract"
+                        android:src="@drawable/ic_baseline_remove_24px"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:text="@string/time_dots"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                <ImageButton
+                        android:id="@+id/add_minute_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:contentDescription="@string/image_button_add"
+                        android:src="@drawable/ic_baseline_add_24px"/>
+
+                <TextView
+                        android:id="@+id/minutes_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="32sp"
+                        android:text="@string/initial_state"/>
+
+                <ImageButton
+                        android:id="@+id/remove_minute_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:contentDescription="@string/image_button_subtract"
+                        android:src="@drawable/ic_baseline_remove_24px"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:text="@string/time_dots"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                <ImageButton
+                        android:id="@+id/add_second_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:contentDescription="@string/image_button_add"
+                        android:src="@drawable/ic_baseline_add_24px"/>
+
+                <TextView
+                        android:id="@+id/seconds_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="32sp"
+                        android:text="@string/initial_state"/>
+
+                <ImageButton
+                        android:id="@+id/remove_second_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:contentDescription="@string/image_button_subtract"
+                        android:src="@drawable/ic_baseline_remove_24px"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <EditText
+            android:id="@+id/dialog_description_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="textMultiLine"
+            android:hint="@string/hint_dialog_description"
+            android:autofillHints="@string/hint_dialog_description"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="end">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dialog_discard_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?buttonBarNegativeButtonStyle"
+                android:textSize="@dimen/dialog_buttons_text_size"
+                android:text="@string/button_discard"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dialog_book_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?buttonBarPositiveButtonStyle"
+                android:textSize="@dimen/dialog_buttons_text_size"
+                android:text="@string/button_book"/>
+
+    </LinearLayout>
+
+</LinearLayout>

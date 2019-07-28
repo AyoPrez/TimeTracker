@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Time tracking</string>
+    <string name="button_pause">Pause</string>
+    <string name="button_resume">Resume</string>
+    <string name="button_stop">Stop</string>
+    <string name="title_dialog_book">Do you want to book this time?</string>
+    <string name="chronometer_initial_state">00:00:00</string>
+    <string name="button_book">Book</string>
+    <string name="button_discard">Discard</string>
+    <string name="hint_dialog_description">Introduce a description of the task</string>
+    <string name="text_empty_list">The list is empty</string>
+    <string name="search_hint">Search</string>
+    <string name="title_dialog_add_new_book">Book new time</string>
+    <string name="initial_state">00</string>
+    <string name="time_dots">:</string>
+
+    <!-- Menus -->
+    <string name="menu_open_list">Open list</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_add">Add new time tracked</string>
+
+
+    <!-- Content description-->
+    <string name="image_empty_list">Empty list</string>
+    <string name="image_button_add">Add time button</string>
+    <string name="image_button_subtract">Subtract time button</string>
+
+</resources>
